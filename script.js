@@ -38,19 +38,19 @@ const changeTitle = function (song) {
 };
 
 const loadSong = function (song) {
-  audio.src = `/assets/audio/${song}.mp3`;
-  cover.src = `/assets/img/${song}.png`;
-  backgroundImage.src = `/assets/img/${song}.png`;
+  audio.src = `assets/audio/${song}.mp3`;
+  cover.src = `assets/img/${song}.png`;
+  backgroundImage.src = `assets/img/${song}.png`;
 };
 
 const playSong = function () {
   isPlaying = !isPlaying;
   if (isPlaying) {
     audio.play();
-    playPauseImage.src = "/assets/svg/pause.png";
+    playPauseImage.src = "assets/svg/pause.png";
   } else {
     audio.pause();
-    playPauseImage.src = "/assets/svg/play.png";
+    playPauseImage.src = "assets/svg/play.png";
   }
 };
 
